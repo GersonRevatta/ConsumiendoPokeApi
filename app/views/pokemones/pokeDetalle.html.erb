@@ -1,0 +1,21 @@
+<h3>Nombre:</h3>
+<%= @poke["name"]%>
+<br>
+<h3>Habilidades:</h3>
+ <% @poke["abilities"].each do |hola|  %>
+      <%= hola["ability"]["name"]%>
+      <br>  
+<% end %>
+<br>
+<h3>Tipo:</h3>
+<% @poke["types"].each do |i| %>
+    <%= i["type"]["name"] %>
+    <br>
+<% end %>
+<h3>Posibles Movimientos</h3>
+<% @poke["moves"].each do |j| %>
+  <%= j["move"]["name"] %>
+  <br>
+<% end %>
+
+
